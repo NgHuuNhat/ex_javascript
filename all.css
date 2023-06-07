@@ -1,0 +1,214 @@
+/* CSS cho thông báo lỗi */
+.error-message {
+  color: red;
+}
+
+/* Tùy chỉnh giao diện chung */
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+h1,
+h2 {
+  color: #333;
+  display: block !important;
+  text-align: center;
+}
+
+/* navbar-nav */
+.navbar-nav {
+  display: contents;
+}
+
+/*form*/
+form {
+  display: grid;
+  border: 1px solid #333;
+  width: 50%;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+/* loginForm */
+#loginForm {
+  display: none;
+}
+
+/*Btn*/
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/*createBtn_updateBtn*/
+#Btn {
+  display: flex;
+}
+
+#Btn>input {
+  width: 100%;
+}
+
+/*createBtn_updateBtn_login*/
+/* #createBtn {
+  margin-right: 5px;
+} */
+
+#updateBtn {
+  /* margin-left: 5px; */
+  display: none;
+}
+
+/*createBtn_updateBtn_nav*/
+#updateButton {
+  display: none;
+}
+
+/* createAccountForm */
+#createAccountForm {
+  display: none;
+}
+
+/*updateAccountForm*/
+#updateAccountForm {
+  display: none;
+}
+
+#updateAccountForm>div {
+  display: grid;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#updateAccountForm>div>div {
+  padding: 0 5px;
+}
+
+#updateAccountForm>div>div>input {
+  width: 100%;
+}
+
+/* userListForm */
+#userListForm {
+  width: 80%;
+  padding: 0;
+  border: none;
+  text-align: center;
+}
+
+#userListFormc {
+  display: grid;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.userCard {
+  overflow: hidden;
+  margin: 5px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+#h5p {
+  height: 52.8px;
+}
+
+/* btn see_profile */
+.btn {
+  width: 100%;
+  background-color: #eeeeee;
+  border-radius: 0;
+}
+
+.btn:hover {
+  background-color: #00000033;
+  color: black;
+}
+
+/* userDetailsForm */
+#userDetailsForm {
+  border: none;
+}
+
+#userDetailsFormc {
+  display: none;
+  margin: 10px auto;
+}
+
+#avatar {
+  width: 300px;
+  height: auto;
+}
+
+#pemail {
+  font-weight: 900;
+}
+
+
+
+/* Điều chỉnh cho màn hình iPad */
+@media only screen and (max-width: 768px) {
+
+  /* userListForm */
+  #userListForm {
+    width: 100%;
+  }
+
+  #userListFormc {
+    display: grid;
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #userDetailsFormc {
+    display: block !important;
+  }
+
+}
+
+/* Điều chỉnh cho màn hình iPhone */
+@media only screen and (max-width: 425px) {
+
+  /*form*/
+  form {
+    width: 95%;
+    padding: 10px;
+  }
+
+  /* userListForm */
+  #userListForm {
+    width: 100%;
+  }
+
+  #userListFormc {
+    display: grid;
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #avatar {
+    width: 270px;
+    height: auto;
+  }
+
+}
