@@ -110,7 +110,6 @@ input {
   margin: 5px;
   border: 1px solid #eeeeee;
   border-radius: 5px;
-  position: relative;
 }
 
 p {
@@ -128,12 +127,6 @@ p {
 .card-img-top {
   width: 100%;
   height: auto;
-}
-
-#card-body {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 #h5p {
